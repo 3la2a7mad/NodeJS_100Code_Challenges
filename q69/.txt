@@ -1,0 +1,10 @@
+npm install morgan winston winston-daily-rotate-file
+
+node app.js
+
+GET
+URL: http://localhost:3000/
+GET
+URL: http://localhost:3000/warn
+GET
+URL: http://localhost:3000/error

@@ -1,0 +1,31 @@
+npm init -y
+npm install express zod
+
+POST
+URL: http://localhost:3000/users
+Body: (raw, JSON)
+{
+    "email": "alaa.ahmad@bzu.edu",
+    "age": 21
+}
+POST
+URL: http://localhost:3000/users
+Body: (raw, JSON)
+{
+    "email": "not-an-email",
+    "age": 25
+}
+POST
+URL: http://localhost:3000/users
+Body: (raw, JSON)
+{
+    "email": "test@example.com",
+    "age": 17
+}
+POST
+URL: http://localhost:3000/users
+Body: (raw, JSON)
+{
+    "email": "invalid-email",
+    "age": 16
+}

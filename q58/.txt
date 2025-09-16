@@ -1,0 +1,4 @@
+npm install express-rate-limit
+node app.js
+GET
+URL: http://localhost:3000/api/resource1

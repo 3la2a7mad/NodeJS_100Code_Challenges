@@ -1,0 +1,5 @@
+npm install mongoose
+
+node app.js
+
+While the server is running, press Ctrl+C in the same terminal.

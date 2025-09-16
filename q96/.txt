@@ -1,0 +1,6 @@
+npm init -y
+npm install express zod dotenv
+node app.js
+
+in .env file comment this line:-
+# DATABASE_URL="mongodb://alaa:password@localhost:27017/q96"

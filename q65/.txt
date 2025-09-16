@@ -1,0 +1,15 @@
+npm install multer
+
+node app.js
+
+POST
+URL: http://localhost:3000/upload-avatar
+Body: (form-data)
+Key: avatar
+Type: File
+Value: (Click "Select Files" and choose any file from your computer)
+
+POST
+URL: http://localhost:3000/upload-avatar
+Body: (form-data)
+(Leave the body completely empty)

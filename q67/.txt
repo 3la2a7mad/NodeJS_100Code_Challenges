@@ -1,0 +1,19 @@
+npm install socket.io
+node app.js
+
+to make test:-
+Open two separate browser windows (or tabs).
+In both windows, navigate to http://localhost:3000.
+Join the Same Room:
+In Window 1, type room1 into the "Enter room name" field and click Join Room.
+In Window 2, also type room1 into the field and click Join Room.
+Broadcast a Message:
+In Window 1, type a message like Hello from Alaa! into the "Enter message" field and click Send Message to Room.
+Verify the Result:
+The message User [ID]: Hello from Alaa! should appear in the message box of both Window 1 and Window
+2. This confirms the broadcast to the room was successful.
+Test Room Isolation (Optional):
+In Window 2, now join a different room by typing room2 and clicking Join Room. The message list will clear.
+Go back to Window 1 (which is still in room1) and send another message.
+Verify that this new message appears in Window 1 only, and not in Window 
+2. This proves that messages are correctly isolated to their specific rooms.

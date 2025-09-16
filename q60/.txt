@@ -1,0 +1,23 @@
+npm install mongoose jsonwebtoken bcryptjs
+node app.js
+POST
+URL: http://localhost:3000/register
+Body: (raw, JSON)
+{
+    "email": "alaa.ahmad@bzu.edu",
+    "password": "securepassword123"
+}
+POST
+URL: http://localhost:3000/login
+Body: (raw, JSON)
+{
+    "email": "alaa.ahmad@bzu.edu",
+    "password": "1234"
+}
+POST
+URL: http://localhost:3000/login
+Body: (raw, JSON)
+{
+    "email": "alaa.ahmad@bzu.edu",
+    "password": "111111"
+}

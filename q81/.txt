@@ -1,0 +1,22 @@
+in powershell :-
+wsl --install
+
+to open wsl in windows terminal write this is start menue:-
+Ubuntu
+in the terminal in wsl :-
+sudo apt update
+sudo apt install redis-server
+sudo service redis-server start
+
+in the terminal :-
+npm init -y
+npm install express redis node-fetch
+npm install node-fetch@2
+
+now go to postman to test the api :-
+http://localhost:3000/posts 
+use get method to test the api and see the output in the terminal you will see cache miss! fetching from api
+
+now again test the api in postman :-
+http://localhost:3000/posts
+use get method to test the api and see the output in the terminal you will see cache hit!

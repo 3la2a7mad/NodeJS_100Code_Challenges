@@ -1,0 +1,12 @@
+npm install redis
+node app.js
+Ubuntu terminal,
+sudo service redis-server start
+redis-cli ping
+
+in another terminal
+curl.exe -i "http://localhost:3000/api"
+or you can use postman
+
+to stop redis server
+sudo service redis-server stop

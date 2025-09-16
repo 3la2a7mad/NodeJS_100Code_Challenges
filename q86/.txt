@@ -1,0 +1,5 @@
+npm install typescript ts-node --save-dev
+
+to run:-
+npx ts-node app.ts
+

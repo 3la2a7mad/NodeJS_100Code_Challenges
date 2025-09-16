@@ -1,0 +1,4 @@
+Tilde (~) only allows PATCH updates (the last number). It is very strict.
+e.g., "~4.17.1" will update to "4.17.3" but NOT "4.18.0".
+Caret (^) allows MINOR and PATCH updates (the middle and last numbers). It is the default.
+e.g., "^4.17.1" will update to "4.18.2" but NOT "5.0.0".

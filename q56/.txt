@@ -1,0 +1,6 @@
+npx prisma migrate dev --name add_verified_to_user
+npx prisma migrate dev --name fix_user_id_type
+POST http://localhost:3000/users with body {"email": "verify-me@test.com"}
+GET http://localhost:3000/users  see that verified is false.
+PATCH http://localhost:3000/users/1/verify
+GET http://localhost:3000/users again. have verified: true

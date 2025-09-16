@@ -1,0 +1,13 @@
+npm install node-fetch@2
+
+In Terminal 1 
+node index.js
+
+**In Terminal 2 (start Service A):
+node index.js
+
+GET
+URL: http://localhost:3000/calculate?a=50&b=25
+and lock to the terminal 1 and terminal 2
+
+

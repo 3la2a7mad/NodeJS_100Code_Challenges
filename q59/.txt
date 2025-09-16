@@ -1,0 +1,8 @@
+npm install cookie-parser express-session connect-mongo
+node app.js
+POST
+URL: http://localhost:3000/login
+GET
+URL: http://localhost:3000/profile
+POST
+URL: http://localhost:3000/logout

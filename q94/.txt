@@ -1,0 +1,25 @@
+npm init -y
+
+go to the "Run and Debug" view click the icon with the play button 
+create a launch.json file
+select Node.js
+This will create a .vscode folder in your project with a launch.json file inside.
+Replace the entire content of launch.json with :
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run My Program",
+      "program": "${workspaceFolder}/q94/index.js",
+      "stopOnEntry": false
+    }
+  ]
+}
+
+go to  index.js file.
+Find this line of code: total += items[i];
+Click in the gutter to the left of the line number. A red dot will appear
+
+Run and Debug

@@ -1,0 +1,5 @@
+First, My load balancer is sending all live traffic to the "Blue" environment, which is My current, stable version of the app.
+Meanwhile, I'll deploy the new app version to an identical "Green" environment that's completely separate from live
+traffic for final testing.
+Once I'm confident it's working, I just reconfigure the load balancer to instantly route all traffic to Green,
+which gives me a zero-downtime deployment and an immediate rollback option if needed.

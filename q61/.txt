@@ -1,0 +1,13 @@
+npm install jsonwebtoken
+
+node app.js
+
+POST
+URL: http://localhost:3000/login
+
+GET
+URL: http://localhost:3000/profile
+
+GET
+URL: http://localhost:3000/profile
+go to the Authorization tab, select Bearer Token from the dropdown, and paste the token into the text field

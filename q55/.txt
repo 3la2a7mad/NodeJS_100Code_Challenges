@@ -1,0 +1,7 @@
+npm install express @prisma/client
+npx prisma generate
+node app.js
+POST
+URL: http://localhost:3000/seed
+GET
+URL: http://localhost:3000/users/search?domain=example.com

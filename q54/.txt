@@ -1,0 +1,12 @@
+// npm install prisma --save-dev
+// npx prisma init
+// npx prisma migrate dev --name init
+must have run "npx prisma migrate dev --name init" at least once
+node app.js
+POST
+URL: http://localhost:3000/users
+body:
+{
+    "email": "alaa.ahmad@bzu.edu"
+}
+Click the Send button a second time.

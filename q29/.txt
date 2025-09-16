@@ -1,0 +1,12 @@
+Step 1: Start the Node.js REPL
+i will write (node) in my terminal and it will be like this > after press enter
+-------------------------------------------------------------------
+ Step 2: Evaluate an expression
+  At the '>' prompt, i will type 'process.version' and hit Enter.
+  The REPL immediately prints the result on the next line.     
+-------------------------------------------------------------------
+ Step 3: Exit the REPL
+  To leave the REPL, i will type '.exit' 
+  or CTRL + C
+
+  

@@ -1,0 +1,12 @@
+node app.js
+
+GET
+URL: http://localhost:3000/data
+
+Cache Hit - within 5 seconds (exact same request again before 5 seconds have passed)
+GET
+URL: http://localhost:3000/data
+
+Cache Expired - after 5 seconds (Wait for more than 5 seconds)
+GET
+URL: http://localhost:3000/data

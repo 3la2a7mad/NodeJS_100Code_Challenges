@@ -1,0 +1,4 @@
+node app.js
+Type any text, for example: Hello from Alaa Ahmad at Birzeit University.
+Press Enter.
+HELLO FROM ALAA AHMAD AT BIRZEIT UNIVERSITY.

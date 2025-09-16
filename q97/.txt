@@ -1,0 +1,8 @@
+npm install helmet
+node app.js
+
+in postman 
+GET 
+http://localhost:3000
+SEE Haeders section
+X-Content-Type-Options -----> nosniff

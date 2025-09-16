@@ -1,0 +1,14 @@
+node index.js
+POST
+http://localhost:3000/data.
+{
+  "name": "John Doe",
+  "status": "active"
+}
+
+POST
+http://localhost:3000/data.
+{
+ "data": "past any large"
+}
+

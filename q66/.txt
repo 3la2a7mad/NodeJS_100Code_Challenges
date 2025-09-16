@@ -1,0 +1,26 @@
+npm install ws
+
+node app.js
+
+Create a New WebSocket Request:
+In Postman, click the New button (or + icon).
+In the menu that appears, select WebSocket Request.
+
+Connect to the Server:
+In the URL bar, enter the WebSocket server address: ws://localhost:8080.
+Click the Connect button.
+i should see a "CONNECTED" status and a log message in the "Messages" pane.in the terminal running 
+the server will also log "Client connected."
+
+Send and Receive a Message:
+In the message composer at the bottom (labeled "New Message"), type Hello from Alaa Ahmad.
+Click Send.
+
+Observe the result:
+In i terminal,i will see Received: Hello from Alaa Ahmad and Sent: server: Hello from Alaa Ahmad.
+In the Postman "Messages" pane, i will see i outgoing message 
+(up arrow) and the server's response (down arrow) right below it: server: Hello from Alaa Ahmad.
+
+Disconnect:
+Click the Disconnect button in Postman.
+in my terminal will log "Client disconnected."

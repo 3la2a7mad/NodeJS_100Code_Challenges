@@ -1,0 +1,18 @@
+npm install swagger-jsdoc swagger-ui-express
+node app.js
+
+in browser 
+http://localhost:3000/docs
+
+Get all books:
+GET
+URL: http://localhost:3000/books
+
+Create a new book:
+POST
+URL: http://localhost:3000/books
+Body: (raw, JSON)
+{
+    "title": "test 3",
+    "author": "Alaa Ahmad"
+}

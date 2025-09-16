@@ -1,0 +1,16 @@
+npm install cookie-parser csurf
+node app.js
+GET
+URL: http://localhost:3000/get-csrf-token
+
+POST
+URL: http://localhost:3000/transfer
+Body: (x-www-form-urlencoded)
+Key: _csrf
+Value: PASTE_THE_TOKEN_YOU_COPIED_HERE
+
+POST
+URL: http://localhost:3000/transfer
+Body: (x-www-form-urlencoded)
+Key: _csrf
+Value: PASTE_THE_INVALED_TOKEN_YOU_COPIED_HERE

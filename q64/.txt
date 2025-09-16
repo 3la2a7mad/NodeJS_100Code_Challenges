@@ -1,0 +1,20 @@
+npm install cors
+node app.js
+
+Set the request type to GET.
+Set the URL to http://localhost:3000/api/data.
+Go to the Headers tab.
+Add a new header:
+KEY: Origin
+VALUE: https://app.example.com
+Click Send.
+
+Keep the same request setup as Test A.
+In the Headers tab, change the value of the Origin header:
+KEY: Origin
+VALUE: http://some-other-website.com
+Click Send.
+
+Keep the same request setup.
+In the Headers tab, uncheck the box next to the Origin header to disable it.
+Click Send.

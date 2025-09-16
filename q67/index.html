@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Socket.IO Rooms - Alaa Ahmad</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input { margin-bottom: 10px; padding: 8px; width: 200px; }
+        button { padding: 8px 12px; }
+        #messages { list-style-type: none; padding: 0; margin-top: 20px; border: 1px solid #ccc; height: 200px; overflow-y: scroll; background-color: #f9f9f9; }
+        #messages li { padding: 8px; border-bottom: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <h1>Socket.IO Rooms</h1>
+    <div>
+        <input id="roomName" type="text" placeholder="Enter room name (e.g., room1)" />
+        <button id="joinButton">Join Room</button>
+        <p id="status"></p>
+    </div>
+    <hr>
+    <div>
+        <input id="message" type="text" placeholder="Enter message" />
+        <button id="sendButton">Send Message to Room</button>
+    </div>
+    <ul id="messages"></ul>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        const joinButton = document.getElementById('joinButton');
+        const roomNameInput = document.getElementById('roomName');
+        const sendButton = document.getElementById('sendButton');
+        const messageInput = document.getElementById('message');
+        const messages = document.getElementById('messages');
+        const status = document.getElementById('status');
+        let currentRoom = '';
+
+        joinButton.onclick = () => {
+            const roomName = roomNameInput.value.trim();
+            if (roomName) {
+                socket.emit('join_room', roomName);
+                currentRoom = roomName;
+            }
+        };
+
+        sendButton.onclick = () => {
+            const message = messageInput.value.trim();
+            if (message && currentRoom) {
+                socket.emit('send_message_to_room', { room: currentRoom, message: message });
+                messageInput.value = '';
+            } else if (!currentRoom) {
+                alert('Please join a room first!');
+            }
+        };
+
+        socket.on('joined_room_confirmation', (confirmationMessage) => {
+            status.textContent = confirmationMessage;
+            messages.innerHTML = '';
+        });
+
+        socket.on('receive_room_message', (message) => {
+            const item = document.createElement('li');
+            item.textContent = message;
+            messages.appendChild(item);
+        });
+    </script>
+</body>
+</html>

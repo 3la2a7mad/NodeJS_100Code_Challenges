@@ -1,0 +1,17 @@
+IMPORTANT: The config module is imported FIRST.
+npm install dotenv
+npm install cross-env --save-dev
+
+Test the Validation (Invalid Environment)
+
+Powershell
+$env:NODE_ENV="staging";
+node app.js
+Result: The application will not start. It will crash immediately with the error message we defined:
+throw new Error(Invalid NODE_ENV specified: 'staging'. Must be one of: dev, test, prod.);
+
+Powershell
+$env:NODE_ENV="test";
+node app.js
+Result: The server starts, and if you go to cd  in Postman or your
+ browser, you will see the configuration for the test environment loaded.

@@ -1,0 +1,13 @@
+{
+  "name": "q93",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fileReader.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

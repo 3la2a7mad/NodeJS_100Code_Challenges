@@ -1,0 +1,4 @@
+/npm init -y
+/npm install express
+npm install jest supertest --save-dev
+run using "npm test" command

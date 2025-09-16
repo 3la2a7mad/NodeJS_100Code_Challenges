@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    /* --- Essential Module & Target Settings for ESM --- */
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+
+    /* --- Recommended Best Practices --- */
+    "strict": true,
+    "skipLibCheck": true,
+
+    /* --- Project Structure --- */
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,19 @@
+// This tells Prisma to generate the client for JavaScript/Node.js
+generator client {
+  provider = "prisma-client-js"
+}
+
+// THIS IS THE IMPORTANT CHANGE 
+// We tell Prisma our data source is a MongoDB database
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL") // Connection string is in the .env file
+}
+
+
+// HIS IS THE SOLUTION TO THE CHALLENGE (Adapted for MongoDB) 
+model User {
+  // MongoDB uses a special ObjectId for its IDs, not an auto-incrementing number
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  email String @unique
+}

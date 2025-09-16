@@ -1,0 +1,7 @@
+post
+http://localhost:3000/users
+{}
+post
+{
+    "email": "alaa.ahmad@example.com"
+}

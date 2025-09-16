@@ -1,0 +1,10 @@
+npm install dotenv
+node app.js
+
+FEATURE_NEW_HOME=false
+GET
+URL: http://localhost:3000/home
+
+FEATURE_NEW_HOME=true
+GET
+URL: http://localhost:3000/home

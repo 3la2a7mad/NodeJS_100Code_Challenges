@@ -1,0 +1,13 @@
+to  running replica set
+Stop the Regular MongoDB Service
+Press Win + R, type services.msc, and hit Enter.
+Find "MongoDB Server" in the list.
+Right-click on it and select Stop.
+open termenal
+cd "C:\Program Files\MongoDB\Server\8.0\bin"
+mongod --dbpath="C:\data\db" --replSet="rs0"
+Open a new Terminal
+mongosh
+rs.initiate()
+in brawser 
+http://localhost:3000/run-transaction

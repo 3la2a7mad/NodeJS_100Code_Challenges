@@ -1,0 +1,18 @@
+npm init -y
+npm install express
+npm install pm2 -g
+
+
+
+in terminal:-
+pm2 delete my-app
+pm2 start app.js -i max --name my-app
+
+after this go to postman whitout make node app.js becouse it is work in pm2:-
+GET
+http://localhost:3000/
+make GET multiple times
+
+at the end:-
+pm2 stop my-app
+

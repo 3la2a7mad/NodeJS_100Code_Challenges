@@ -1,0 +1,24 @@
+npm init -y
+sudo service redis-server start
+redis-cli ping
+npm install bullmq
+
+
+////////////////
+queue.js: To define and export the queue, so it can be shared between the producer and the worker.
+producer.js: The script to add jobs to the queue.
+worker.js: The script to process jobs from the queue.
+////////////////////////
+
+Test
+start the worker:
+code
+node worker.js
+(You should see Worker is starting...)
+
+In a second terminal, run the producer multiple times:
+code
+node producer.js
+node producer.js
+node producer.js
+You should now see the jobs being processed in the worker terminal, and the code works perfectly with the CommonJS syntax you prefer.
